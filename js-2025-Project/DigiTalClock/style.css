@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(225, 141, 225);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock-container{
+    width: 500px;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 40px;
+}
+.clock-container span{
+    font-size: 70px;
+}
