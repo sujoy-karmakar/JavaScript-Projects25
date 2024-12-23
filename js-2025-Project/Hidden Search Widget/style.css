@@ -1,0 +1,87 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #69c6e8;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 30px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    
+}
+
+/* Input Field Styling */
+.container input {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 10px;
+    width: 0;
+    opacity: 0;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Input Field Visible State */
+.container.active input {
+    width: 250px;
+    opacity: 1;
+    background-color: #f3f3f3;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+/* Button Styling */
+#btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #69c6e8;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+/* Button Hover Effect */
+#btn:hover {
+    background-color: #56a3c7;
+}
+
+/* Search Icon Styling */
+#btn i {
+    font-size: 18px;
+}
+
+/* Focused Input Styling */
+.container.active input:focus {
+    border-color: #69c6e8;
+    box-shadow: 0 0 5px rgba(105, 198, 232, 0.7);
+}
